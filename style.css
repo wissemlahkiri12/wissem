@@ -1,0 +1,153 @@
+      /* Resetting default margin and padding */
+      body, ul {
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Styling the navigation bar */
+      nav {
+          background-color: #333;
+          padding: 10px;
+          text-align: right; /* Align menu to the right */
+      }
+
+      #toggle-menu {
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          font-size: 24px; /* Increase font size */
+          cursor: pointer;
+          margin-right: 20px; /* Add margin to the right */
+          transition: all 0.3s ease; /* Add transition */
+      }
+
+      #toggle-menu.active {
+          transform: rotate(90deg); /* Rotate menu button to X */
+      }
+
+      .menu {
+          list-style-type: none;
+          position: absolute; /* Position the menu absolutely */
+          top: 50px; /* Adjust the top position */
+          right: 0; /* Align the menu to the right */
+          background-color: #333; /* Background color */
+          padding: 20px;
+          display: none; /* Hide menu by default */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+          animation: slideIn 0.5s forwards; /* Add animation */
+      }
+
+      .menu.show {
+          display: block; /* Show menu when 'show' class is added */
+      }
+
+      .menu li {
+          margin-bottom: 10px;
+      }
+
+      .menu li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px;
+          transition: all 0.3s ease;
+          border-radius: 5px; /* Add border radius */
+      }
+
+      .menu li a:hover {
+          background-color: #555;
+      }
+
+      /* Animation */
+      @keyframes slideIn {
+          from {
+              opacity: 0;
+              transform: translateY(-20px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      /* Styling the header */
+      header {
+          background-color: #f2f2f2;
+          padding: 20px;
+          text-align: center;
+      }
+
+      header h1 {
+          margin-bottom: 10px;
+          font-size: 2.5em;
+          color: #333;
+      }
+
+      header p {
+          color: #666;
+      }
+
+      /* Styling the main content */
+      section#about-me {
+          padding: 20px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .profile-info, .university-info {
+          text-align: center;
+      }
+
+      .profile-info h2, .university-info h2 {
+          color: #333;
+          font-size: 1.5em;
+      }
+
+      .profile-info p, .university-info p {
+          color: #666;
+      }
+
+      .profile-info p {
+          margin-bottom: 20px;
+      }
+
+      .profile-info img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+      }
+
+      .university-info img {
+          width: 300px; /* تحديد عرض الصورة */
+          height: auto; /* السماح بالارتفاع للتعديل تلقائيًا مع العرض */
+          border-radius: 10px; /* إضافة حواف مستديرة */
+          margin-bottom: 10px;
+      }
+
+      /* Styling the T.S.G section */
+      section#tsg-info {
+          background-color: #f2f2f2;
+          padding: 20px;
+          text-align: center;
+      }
+
+      section#tsg-info h1 {
+          color: #333;
+          margin-bottom: 10px;
+          font-size: 2.5em;
+      }
+
+      section#tsg-info p {
+          color: #666;
+      }
+
+      footer {
+          background-color: #0084bd; /* لون خلفية الfooter */
+          color: #fff; /* لون النص في الfooter */
+          text-align: center; /* محاذاة النص في الوسط */
+          padding: 10px; /* تباعد داخلي */
+          position: fixed; /* تثبيت الfooter في الأسفل */
+          width: 100%; /* العرض بالكامل */
+          bottom: 0; /* الإرتفاع من الأسفل */
+      }

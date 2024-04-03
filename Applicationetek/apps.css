@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto; /* تحديد هوامش يسار التطبيقات */
+    margin-right: auto; /* تحديد هوامش يمين التطبيقات */
+}
+
+.program {
+    width: calc(50% - 40px); /* تحديد عرض كل برنامج بحيث يكون نصف العرض مع تخفيض المسافة بينهم */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.program img {
+    width: 100px; /* تصغير حجم الصورة */
+    border-radius: 5px;
+    margin-bottom: 15px; /* تزويد بعض المسافة بين الصورة والنصوص */
+}
+
+.program h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.program p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.program a {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.program a:hover {
+    background-color: #45a049;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px; /* حجم النص في footer */
+}
